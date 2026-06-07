@@ -1,0 +1,23 @@
+{
+  "skill_name": "pdd-gate",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use pdd-gate to check whether this macOS app can ship v0.2.1. Apple Developer approval is still blocked, and there is a local assistant-sidecar directory that should not ship. Do not commit.",
+      "expected_output": "Builds a Release Map separating public/tagged, pushed, committed-only, uncommitted, excluded, and blockers. It treats Apple Developer approval as a public-release blocker, excludes assistant-sidecar, gives a yellow or red decision as appropriate, and does not stage or commit.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "I renamed the product and want one clean commit, but there are unrelated training files in the worktree. Should I tag now?",
+      "expected_output": "Defines a safe commit boundary for rename work, puts training files in Excluded, explains whether the version bump is patch or minor scope, and warns not to tag until metadata, changelog, tests, and release blockers are aligned.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "We are at 0.2.0 and planning 0.3.0. Three features are done, but deployment credentials and notarization are missing. Create a release checklist.",
+      "expected_output": "Creates a version plan and release checklist that preserves 0.2.0 as baseline, frames 0.3.0 around shippable user-facing scope, marks credentials and notarization as blockers, and avoids performing Git actions.",
+      "files": []
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "skill_name": "pdd-zero",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use pdd-zero for a rough idea: a Mac menu bar app that tracks my mouse gestures and app usage habits. Do not write code yet.",
+      "expected_output": "Produces a Project Launch Packet with pressure test, PRD, Decision Ledger, product/interface direction, implementation slices, verification plan, architecture guardrails, version plan, and immediate next actions. It calls out local data/privacy and release blockers, and does not implement code.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "从0到1做一个 iOS 小众工具，帮用户管理冰箱食材过期。先走完整新项目流程，然后告诉我 Slice 1 怎么做。",
+      "expected_output": "Handles the Chinese new-project trigger, narrows the MVP, produces a launch packet with a Decision Ledger, and ends with concrete Slice 1 acceptance criteria without depending on external skills.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "I want to build an AI SaaS where users upload documents and receive a personal profile with recommendations. Help me lock product logic, privacy boundaries, and version direction before coding.",
+      "expected_output": "Emphasizes pressure testing, consent, upload/privacy boundaries, blocked decisions, release blockers, architecture guardrails, and version progression before implementation.",
+      "files": []
+    }
+  ]
+}

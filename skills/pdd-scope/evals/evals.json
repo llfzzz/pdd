@@ -1,0 +1,23 @@
+{
+  "skill_name": "pdd-scope",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Use pdd-scope before implementing a new CSV import endpoint. The repo already has JSON import code and a validation helper. I want the smallest safe change.",
+      "expected_output": "Produces a Scope Lock with goal, required behavior, non-goals, existing reuse options, minimal route, verification, and stop conditions. It explicitly prefers reusing the existing import and validation patterns before adding new code or dependencies.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Fix this flaky checkout test. Do not refactor the whole payment module unless needed.",
+      "expected_output": "Scopes the bug fix narrowly, identifies verification through the failing test and relevant test set, avoids broad refactors, and defines when to stop and ask if the failure cannot be reproduced.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Add an automation script that deletes old generated files, but make sure it cannot delete personal data.",
+      "expected_output": "Treats deletion as risky, asks or stops for safety boundaries if needed, defines non-goals and stop conditions, and requires dry-run or verification before destructive behavior.",
+      "files": []
+    }
+  ]
+}
